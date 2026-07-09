@@ -14,8 +14,8 @@ The current code implements the static GIN-LSTM style pipeline:
 Paper:
 
 > Zeren Xing, Beiyu Song, Edward Chung, Ashish Bhaskar, Azusa Toriumi,
-> Takashi Oguchi, and Keshuang Tang, "Efficient Online Origin-Destination
-> Prediction via a Knowledge-Driven Deep Learning Framework."
+> Takashi Oguchi, and Keshuang Tang (2026). Efficient Online Origin-Destination
+> Prediction via a Knowledge-Driven Deep Learning Framework. IEEE Transactions on Intelligent Transportation Systems (Early Access).
 
 
 ## Installation
