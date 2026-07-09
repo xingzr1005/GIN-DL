@@ -91,6 +91,6 @@ If you use this code, please cite:
   author  = {Xing, Zeren and Song, Beiyu and Chung, Edward and Bhaskar, Ashish and Toriumi, Azusa and Oguchi, Takashi and Tang, Keshuang},
   journal = {IEEE Transactions on Intelligent Transportation Systems},
   year    = {2026},
-  note    = {Accepted for inclusion}
+  note    = {Early Access}
 }
 ```
