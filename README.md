@@ -1,7 +1,7 @@
 # Efficient Online Origin-Destination Prediction
 
 This repository contains a PyTorch implementation of a knowledge-driven
-origin-destination (OD) prediction framework based on a Gravity
+online origin-destination (OD) prediction framework based on a Gravity
 Model-Inspired Network and LSTM.
 
 The current code implements the static GIN-LSTM style pipeline:
