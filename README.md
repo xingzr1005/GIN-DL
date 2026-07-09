@@ -17,19 +17,6 @@ Paper:
 > Takashi Oguchi, and Keshuang Tang, "Efficient Online Origin-Destination
 > Prediction via a Knowledge-Driven Deep Learning Framework."
 
-## Repository Structure
-
-```text
-.
-|-- Main.py                  # Command-line entry point
-|-- Data_Container_OD.py     # Data loading, normalization, and DataLoader creation
-|-- keyframe_extraction.py   # Key-frame extraction with MSSIM quantile thresholding
-|-- GINDL.py                 # GIN-LSTM model
-|-- Model_Trainer.py         # Pretraining, online training, and testing loops
-|-- Metrics.py               # Evaluation metrics
-|-- lib/                     # Legacy utility code
-`-- requirements.txt         # Python dependencies
-```
 
 ## Installation
 
@@ -40,44 +27,6 @@ pip install -r requirements.txt
 ```
 
 The code is written for Python 3.9+ and PyTorch.
-
-
-
-## Usage
-
-### 1. Key-frame pretraining
-
-```bash
-python Main.py -mode pretrain --input_dir ../data
-```
-
-
-### 2. Online fine-tuning
-
-```bash
-python Main.py -mode train --input_dir ../data
-```
-
-### 3. Testing
-
-```bash
-python Main.py -mode test --input_dir ../data
-```
-
-
-## Key-Frame Extraction
-
-Key frames are extracted by comparing consecutive OD matrices using MSSIM.
-Given the MSSIM sequence, the code selects frames whose similarity is below
-the specified quantile threshold and always keeps the first and last frames.
-
-The default quantile is `0.4`:
-
-```bash
-python Main.py -mode pretrain --keyframe_quantile 0.4
-```
-
-Key-frame indices and MSSIM series are saved under the output directory.
 
 
 
